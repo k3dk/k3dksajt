@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+
+    @font-face {
+  font-family: 'eth';
+  src: url('fonts/eth.ttf') format('truetype'); /* IE9 Compat Modes */
+
+}
+        html,body{
+            height:100%;
+            font-family: 'Lato',sans-serif;
+            overflow:hidden;
+        }
+        .test1,.test2{
+            height:100%;
+            padding:0;
+        }
+        .test1{
+            padding:0;
+            /*background:url('images/photos/hdr_right_me_black.jpg');*/
+            height: 100vh;
+/*
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-size: cover;
+background-position: center;*/
+        }
+        .test2{
+            padding:0;
+            /*background:url('images/photos/hdr_right_vader.jpg');*/
+            height: 100vh;
+/*
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-size: cover;
+            background-position: center;*/
+        }
+        .main-title{
+            font-family: 'Lato',sans-serif;
+            font-weight: 100;
+
+            color: rgb(208, 10, 10);
+            font-size: 9vw;
+            text-align: left;
+        }
+        .other-titles{
+            text-align: center;
+            font-family: 'Lato',sans-serif;
+            font-weight: 100;
+
+            color: rgb(208, 10, 10);
+            font-size: 9vw;
+        }
+        .under-main{
+            color:#000;
+            font-weight: 100;
+            font-size:3.5vw;
+
+            text-align:left;
+        }
+        .title-subtitle{
+            position: absolute;
+            top: 25%;
+                        padding-left: 70px;
+
+        }
+        .main-container{
+            background:url('images/photos/bg_me_2.jpg');
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-position: center;
+            height:100vh;
+        }
+        .main-container2{
+            background:url('images/photos/bg_me_2_coloro.jpg');
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-position: center;
+            height:100vh;
+
+        }
+        .about-me-container{
+            background:url('images/photos/bg_left_me.jpg');
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-position: center;
+            height:100vh;
+
+        }
+
+    </style>
+  </head>
+  <body>
+      <div class="container-fluid">
+
+          <div class="row">
+      <div id="cv-menu">
+          <nav id="cv-main-menu">
+
+
+              <ul>
+                  <!-- SIDEBAR MENU ICON -->
+                  <!-- <li><a href="#" class="cv-menu-button fa fa-bars">Menu</a> -->
+                  </li>
+                  <!-- PAGE 1 LINK -->
+                  <li class="links-to-floor-li" data-id="1" data-slug="home"><a href="#home" class="fa fa-home tooltip-menu" title="HOME">Home</a>
+                  </li>
+                  <!-- PAGE 2 LINK -->
+                  <li class="links-to-floor-li" data-id="2" data-slug="about"><a href="#about" class="fa fa-user tooltip-menu" title="ABOUT">About</a>
+                  </li>
+                  <!-- PAGE 3 LINK -->
+                  <li class="links-to-floor-li" data-id="3" data-slug="resume"><a href="#resume" class="fa fa-graduation-cap tooltip-menu" title="RESUME">Resume</a>
+                  </li>
+
+                  <!-- PAGE 4 LINK -->
+  <!--                 <li class="links-to-floor-li" data-id="4" data-slug="portfolio"><a href="#portfolio" class="fa fa-briefcase tooltip-menu" title="PORTFOLIO">Portfolio</a>
+                  </li> -->
+                  <!-- PAGE 5 LINK -->
+                  <li class="links-to-floor-li" data-id="5" data-slug="contact"><a href="#contact" class="fa fa-send tooltip-menu" title="CONTACT">Contact</a>
+                  </li>
+                    <hr>
+                  <li class="links-to-floor-li"><a href="" class="fa fa-facebook-f tooltip-menu change" title="RESUME">Twitter</a>
+                  </li>
+                  <li class="links-to-floor-li" data-id="3" data-slug="resume"><a href="#resume" class="fa fa-twitter tooltip-menu" title="RESUME">Facebook</a>
+                  </li>
+                  <li class="links-to-floor-li" data-id="3" data-slug="resume"><a href="#resume" class="fa fa-linkedin tooltip-menu" title="RESUME">Linkedin</a>
+                  </li>
+
+                  <hr>
+                  <li class="links-to-floor-li clickme"><a class="fa fa-paint-brush tooltip-menu clickme" title="RESUME"></a>
+                  </li>
+                  <li class="links-to-floor-li clickback"><a class="fa fa-eraser tooltip-menu clickback" title="RESUME"></a>
+                  </li>
+              </ul>
+
+          </nav>
+      </div>
+
+            <div class="col-sm-12 main-container" id="home">
+                <div class="title-subtitle">
+                <h1 class="main-title">KOSTADIN KELJTANOSKI</h1>
+                <p class="lead under-main">Web Designer & Developer</p>
+
+                <!-- <h1 class="main-title">KELJTANOSKI</h1> -->
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="about">
+        <div class="row">
+            <div class="col-sm-12 about-me-container">
+
+                <h1 class="other-titles pull-right">ABOUT ME</h1>
+                <div class="col-sm-6 col-sm-offset-4 pull-right">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit fugit est, autem vero quos harum quia ratione molestiae minima explicabo? Molestiae, aspernatur officiis alias aliquid similique ratione. Labore, optio, commodi.
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur facilis, sint sapiente placeat nemo consequuntur exercitationem a ad dolore quasi aliquid qui obcaecati nam sunt excepturi aperiam nesciunt, iste, harum.</div>
+                <div>Vel aperiam illo suscipit facere nisi qui neque odit tenetur, veritatis provident consectetur aspernatur ad hic quis ab voluptatibus minima error. Delectus voluptatem laborum error facere molestias nisi, veritatis cupiditate.</div>
+                <div>Repellendus asperiores delectus corrupti doloribus earum ad harum voluptatem hic officia reiciendis eos, qui quo consequuntur quas maiores id facere sint quisquam aliquid voluptates provident, nihil odit iste officiis. Odio.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        $(document).on('click', '.clickme', function () {
+            $('#home').addClass('main-container2').removeClass('main-container');
+
+        });
+        $(document).on('click', '.clickback', function () {
+            $('#home').addClass('main-container').removeClass('main-container2');
+        });
+    });
+   </script>
+  </body>
+</html>
