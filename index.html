@@ -6,193 +6,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-
-    @font-face {
-  font-family: 'eth';
-  src: url('fonts/eth.ttf') format('truetype'); /* IE9 Compat Modes */
-
-}
         html,body{
             height:100%;
-            font-family: 'Lato',sans-serif;
-            overflow:hidden;
         }
-        .test1,.test2{
-            height:100%;
-            padding:0;
+        .slika img{
+            max-height: 240px;
+            border:2px solid #999;
+            /*border-radius: 50%;*/
         }
-        .test1{
-            padding:0;
-            /*background:url('images/photos/hdr_right_me_black.jpg');*/
-            height: 100vh;
-/*
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-size: cover;
-background-position: center;*/
-        }
-        .test2{
-            padding:0;
-            /*background:url('images/photos/hdr_right_vader.jpg');*/
-            height: 100vh;
-/*
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-size: cover;
-            background-position: center;*/
-        }
-        .main-title{
-            font-family: 'Lato',sans-serif;
-            font-weight: 100;
-
-            color: rgb(208, 10, 10);
-            font-size: 9vw;
-            text-align: left;
-        }
-        .other-titles{
-            text-align: center;
-            font-family: 'Lato',sans-serif;
-            font-weight: 100;
-
-            color: rgb(208, 10, 10);
-            font-size: 9vw;
-        }
-        .under-main{
-            color:#000;
-            font-weight: 100;
-            font-size:3.5vw;
-
-            text-align:left;
-        }
-        .title-subtitle{
-            position: absolute;
-            top: 25%;
-                        padding-left: 70px;
-
-        }
-        .main-container{
-            background:url('images/photos/bg_me_2.jpg');
-            background-size: cover;
-            background-repeat:no-repeat;
-            background-position: center;
-            height:100vh;
-        }
-        .main-container2{
-            background:url('images/photos/bg_me_2_coloro.jpg');
-            background-size: cover;
-            background-repeat:no-repeat;
-            background-position: center;
-            height:100vh;
-
-        }
-        .about-me-container{
-            background:url('images/photos/bg_left_me.jpg');
-            background-size: cover;
-            background-repeat:no-repeat;
-            background-position: center;
-            height:100vh;
-
+        .dugme{
+            margin-top:5px;
+            margin-bottom: 10px;
         }
 
     </style>
   </head>
   <body>
       <div class="container-fluid">
-
           <div class="row">
-      <div id="cv-menu">
-          <nav id="cv-main-menu">
+              <div class="col-md-2 col-sm-2">
+                  <br><br><br><br><br><br><br><br><br><br>
+              <button class="btn btn-lg btn-primary" id="random" ><i class="fa fa-play-circle-o"></i>&nbsp;Пушти звук</button>
+
+              <div class="hereSounds"></div>
 
 
-              <ul>
-                  <!-- SIDEBAR MENU ICON -->
-                  <!-- <li><a href="#" class="cv-menu-button fa fa-bars">Menu</a> -->
-                  </li>
-                  <!-- PAGE 1 LINK -->
-                  <li class="links-to-floor-li" data-id="1" data-slug="home"><a href="#home" class="fa fa-home tooltip-menu" title="HOME">Home</a>
-                  </li>
-                  <!-- PAGE 2 LINK -->
-                  <li class="links-to-floor-li" data-id="2" data-slug="about"><a href="#about" class="fa fa-user tooltip-menu" title="ABOUT">About</a>
-                  </li>
-                  <!-- PAGE 3 LINK -->
-                  <li class="links-to-floor-li" data-id="3" data-slug="resume"><a href="#resume" class="fa fa-graduation-cap tooltip-menu" title="RESUME">Resume</a>
-                  </li>
+              <ul id="test" hidden>
 
-                  <!-- PAGE 4 LINK -->
-  <!--                 <li class="links-to-floor-li" data-id="4" data-slug="portfolio"><a href="#portfolio" class="fa fa-briefcase tooltip-menu" title="PORTFOLIO">Portfolio</a>
-                  </li> -->
-                  <!-- PAGE 5 LINK -->
-                  <li class="links-to-floor-li" data-id="5" data-slug="contact"><a href="#contact" class="fa fa-send tooltip-menu" title="CONTACT">Contact</a>
-                  </li>
-                    <hr>
-                  <li class="links-to-floor-li"><a href="" class="fa fa-facebook-f tooltip-menu change" title="RESUME">Twitter</a>
-                  </li>
-                  <li class="links-to-floor-li" data-id="3" data-slug="resume"><a href="#resume" class="fa fa-twitter tooltip-menu" title="RESUME">Facebook</a>
-                  </li>
-                  <li class="links-to-floor-li" data-id="3" data-slug="resume"><a href="#resume" class="fa fa-linkedin tooltip-menu" title="RESUME">Linkedin</a>
-                  </li>
-
-                  <hr>
-                  <li class="links-to-floor-li clickme"><a class="fa fa-paint-brush tooltip-menu clickme" title="RESUME"></a>
-                  </li>
-                  <li class="links-to-floor-li clickback"><a class="fa fa-eraser tooltip-menu clickback" title="RESUME"></a>
-                  </li>
               </ul>
+              </div>
+              <div class="col-md-8 col-sm-8 pull-right">
+                  <!-- KAVAL -->
+                     <div class="col-md-4 col-sm-4 slika">
+                    <img src="images/kaval_img.jpg" class="img-responsive" alt="">
+                    <button class="btn btn-lg btn-danger dugme" id="kaval"><i></i>&nbsp;Кавал&nbsp;</button>
+                    <audio controls id="kaval_zvuk" hidden>
+                      <source src="sounds/4.Kaval.mp3" type="audio/mpeg">
+                    </audio>
+                     </div>
+                     <!-- SUPELKA -->
+                     <div class="col-md-4 col-sm-4 slika">
+                    <img src="images/supelka_img.jpg" class="img-responsive" alt="">
+                    <button class="btn btn-lg btn-danger dugme" id="supelka"><i></i>&nbsp;Шупелка&nbsp;</button>
+                    <audio controls id="supelka_zvuk" hidden>
+                      <source src="sounds/1.Supelka.mp3" type="audio/mpeg">
+                    </audio>
+                     </div>
+                     <!-- DUDUK  -->
+                     <div class="col-md-4 col-sm-4 slika">
+                    <img src="images/duduk_img.jpg" class="img-responsive" alt="">
+                    <button class="btn btn-lg btn-danger dugme" id="duduk"><i></i>&nbsp;Дудук&nbsp;</button>
+                    <audio controls id="duduk_zvuk" hidden>
+                      <source src="sounds/3.Duduk.mp3" type="audio/mpeg">
+                    </audio>
+                     </div>
+            </div>
 
-          </nav>
+            <div class="col-md-8 col-sm-8 pull-right">
+                     <!--ZURLA  -->
+                     <div class="col-md-4 col-sm-4 slika">
+                    <img src="images/zurla_img.jpg" class="img-responsive" alt="">
+                    <button class="btn btn-lg btn-danger dugme" id="zurla"><i></i>&nbsp;Зурла&nbsp;</button>
+                    <audio controls id="zurla_zvuk" hidden>
+                      <source src="sounds/7.Zurla.mp3" type="audio/mpeg">
+                    </audio>
+                     </div>
+
+
+                     <!-- GAJDA-->
+                     <div class="col-md-4 col-sm-4 slika">
+                    <img src="images/gajda_img.jpg" class="img-responsive" alt="">
+                    <button class="btn btn-lg btn-danger dugme" id="gajda"><i></i>&nbsp;Гајда&nbsp;</button>
+                    <audio controls id="gajda_zvuk" hidden>
+                      <source src="sounds/5.Gajda.mp3" type="audio/mpeg">
+                    </audio>
+                     </div>
+                </div>
+              </div>
+
+          </div>
       </div>
 
-            <div class="col-sm-12 main-container" id="home">
-                <div class="title-subtitle">
-                <h1 class="main-title">KOSTADIN KELJTANOSKI</h1>
-                <p class="lead under-main">Web Designer & Developer</p>
 
-                <!-- <h1 class="main-title">KELJTANOSKI</h1> -->
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid" id="about">
-        <div class="row">
-            <div class="col-sm-12 about-me-container">
-
-                <h1 class="other-titles pull-right">ABOUT ME</h1>
-                <div class="col-sm-6 col-sm-offset-4 pull-right">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit fugit est, autem vero quos harum quia ratione molestiae minima explicabo? Molestiae, aspernatur officiis alias aliquid similique ratione. Labore, optio, commodi.
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur facilis, sint sapiente placeat nemo consequuntur exercitationem a ad dolore quasi aliquid qui obcaecati nam sunt excepturi aperiam nesciunt, iste, harum.</div>
-                <div>Vel aperiam illo suscipit facere nisi qui neque odit tenetur, veritatis provident consectetur aspernatur ad hic quis ab voluptatibus minima error. Delectus voluptatem laborum error facere molestias nisi, veritatis cupiditate.</div>
-                <div>Repellendus asperiores delectus corrupti doloribus earum ad harum voluptatem hic officia reiciendis eos, qui quo consequuntur quas maiores id facere sint quisquam aliquid voluptates provident, nihil odit iste officiis. Odio.</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
     <script>
-    $(document).ready(function () {
-        $(document).on('click', '.clickme', function () {
-            $('#home').addClass('main-container2').removeClass('main-container');
+    $( document ).ready(function() {
+        var soundsArray = ['kaval','supelka','duduk','zurla','gajda'];
+        var rand = soundsArray[Math.floor(Math.random() * soundsArray.length)];
+        var index = soundsArray.indexOf(rand);
+            var kaval_button = document.getElementById('kaval');
+            var duduk_button = document.getElementById('duduk');
+            var supelka_button = document.getElementById('supelka');
+            var zurla_button = document.getElementById('zurla');
+            var gajda_button = document.getElementById('gajda');
+            var kaval1= document.getElementById('kaval_zvuk');
+            var duduk1= document.getElementById('duduk_zvuk');
+            var gajda1= document.getElementById('gajda_zvuk');
+            var supelka1= document.getElementById('supelka_zvuk');
+            var zurla1= document.getElementById('zurla_zvuk');
+        var oneS = soundsArray[0];
+        var twoS = soundsArray[1];
+        var threeS = soundsArray[2];
+        var fourS = soundsArray[3];
+        var fiveS = soundsArray[4];
 
+        $( "#random" ).click(function() {
+            var rand = soundsArray[Math.floor(Math.random() * soundsArray.length)];
+            var index = soundsArray.indexOf(rand);
+
+            if(index>-1){
+                var list = document.getElementById('test');
+                var entry = document.createElement('li');
+                entry.appendChild(document.createTextNode(rand));
+                switch (rand) {
+                    case 'kaval':
+                        kaval1.play();
+                        // $(".hereSounds").html('Play sound 1');
+                        break;
+                    case 'supelka':
+                        supelka1.play();
+                        // $(".hereSounds").html('Play sound 2');
+                        break;
+                    case 'duduk':
+                        duduk1.play();
+                        // $(".hereSounds").html('Play sound 3');
+                        break;
+                    case 'zurla':
+                        zurla1.play();
+                        // $(".hereSounds").html('Play sound 4');
+                        break;
+                    case 'gajda':
+                        gajda1.play();
+                        // $(".hereSounds").html('Play sound 5');
+                        break;
+                    default:
+
+                }
+                list.appendChild(entry);
+                soundsArray.splice(index,1);
+            }
+            // var click1=7;
+            $("#kaval").click(function(){
+
+                if(rand=='kaval'){
+                    kaval1.pause();
+                    kaval1.currentTime = 0;
+                    $('#kaval>i').addClass('fa fa-check');
+                    $('#kaval').attr("disabled", true);
+                }
+
+            });
+            $("#supelka").click(function(){
+
+                if(rand=='supelka'){
+                    supelka1.pause();
+                    supelka1.currentTime = 0;
+                    $('#supelka>i').addClass('fa fa-check');
+                    $('#supelka').attr("disabled", true);
+                }
+
+            });
+            $("#duduk").click(function(){
+
+                if(rand=='duduk'){
+                    duduk1.pause();
+                    duduk1.currentTime = 0;
+                    $('#duduk>i').addClass('fa fa-check');
+                    $('#duduk').attr("disabled", true);
+                }
+
+            });
+            $("#zurla").click(function(){
+
+                if(rand=='zurla'){
+                    zurla1.pause();
+                    zurla1.currentTime = 0;
+                    $('#zurla>i').addClass('fa fa-check');
+                    $('#zurla').attr("disabled", true)
+                }
+            });
+            $("#gajda").click(function(){
+
+                if(rand=='gajda'){
+                    gajda1.pause();
+                    gajda1.currentTime = 0;
+                    $('#gajda>i').addClass('fa fa-check');
+                    $('#gajda').attr("disabled", true)
+                }
+            });
         });
-        $(document).on('click', '.clickback', function () {
-            $('#home').addClass('main-container').removeClass('main-container2');
-        });
+
+
+        // $( "#random" ).click(function() {
+        //     var rand = soundsArray[Math.floor(Math.random() * soundsArray.length)];
+        //     $(".hereSounds").html(rand);
+        // });
+
+
+
+
+
     });
-   </script>
+
+
+
+    </script>
   </body>
 </html>
